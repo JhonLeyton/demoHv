@@ -1,0 +1,29 @@
+---
+import {work} from "../cv.json";
+---
+
+<div>
+    {
+    work.map(({name, startDate, endDate, position, summary, highlights}) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = 
+        endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;  
+
+        return(
+            <ul>
+                <article>
+                    <header>
+                        <div>
+                            <h3>{name}</h3>
+                            <h4>{position}</h4>
+                        </div>
+                        <time datetime="">{years}</time>
+                    </header>
+                </article>
+            </ul>
+        )
+    }
+    )
+    }   
+</div>
