@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Humo from "../components/Humo.astro";
 ---
 
 <!doctype html>
@@ -12,12 +13,12 @@ import "../styles/global.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<h1 class="text-3xl font-bold underline"></h1>
+		<Humo />
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	:root{
 		color-scheme: light dark;
 	}
@@ -38,8 +39,7 @@ import "../styles/global.css";
 		src: url("/font/tesla.woff2") format("woff2");
 	}
 	
-	html,
-	body {
+	html {
 		margin: 0;
 		width: 100%;
 		height: 100%;
