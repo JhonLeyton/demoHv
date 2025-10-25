@@ -2,87 +2,106 @@
 import ZorroSvg from "../icons/Zorro.svg";
 ---
 
+
 <!-- Sección Principal -->
 <section
   class="flex flex-col items-center justify-center text-center py-12 bg-transparent text-white"
 >
-  <h1 class="text-4xl md:text-5xl font-bold mb-2">Hoja de Vida</h1>
+  <h1 class="text-4xl md:text-5xl font-bold mb-2">ZORRO: Shadow Hunt</h1>
   <h2 class="text-3xl md:text-4xl font-bold mb-4">
-    Hola, soy <span class="text-orange-400">Jhondeivy</span> 
+    Una aventura <span class="text-orange-400">de sigilo y acción</span>
   </h2>
   <p class="max-w-2xl text-lg text-gray-300 mb-8">
-    Estudiante de <span class="text-orange-300 font-semibold"
-      >Ingeniería Informática</span
-    > apasionado por el desarrollo de software, bases de datos y proyectos innovadores.
+    Explora un mundo oscuro lleno de misterios, enfréntate a enemigos letales y descubre
+    los secretos que esconde la máscara del Zorro. Vive una experiencia épica donde cada
+    decisión cuenta.
   </p>
   <ZorroSvg class="w-60 h-auto mb-8 drop-shadow-lg" />
   <div class="flex gap-4">
     <a
-      href="https://github.com/jhonleyton"
-      target="_blank"
+      href="#trailer"
       class="px-5 py-2 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600 transition"
     >
-      GitHub
+      Ver Tráiler
+    </a>
+    <a
+      href="#descargar"
+      class="px-5 py-2 bg-gray-800 rounded-lg font-semibold hover:bg-gray-700 transition"
+    >
+      Descargar Demo
     </a>
   </div>
 </section>
-<!-- Perfil Profesional -->
+
+<!-- Sinopsis -->
 <section class="bg-transparent py-12 px-6 text-center">
-  <h2 class="text-3xl font-bold text-white mb-4">Perfil Profesional</h2>
+  <h2 class="text-3xl font-bold text-white mb-4">Sinopsis</h2>
   <p class="max-w-3xl mx-auto">
-    Soy un estudiante motivado con una sólida base en ingeniería informática. Me
-    interesa especialmente el desarrollo web, el diseño de bases de datos, y la
-    implementación de soluciones tecnológicas que resuelvan problemas reales.
+    "ZORRO: Shadow Hunt" te sumerge en la California del siglo XIX, un territorio
+    dominado por la corrupción y la injusticia. Asume el papel del legendario vigilante
+    en una misión para liberar a los inocentes, infiltrarte en fortalezas y restaurar la
+    esperanza del pueblo.
   </p>
 </section>
-<!-- Educación -->
+
+<!-- Características -->
 <section class="bg-transparent text-white py-12 px-6">
-  <h2 class="text-3xl font-bold text-center mb-8">Educación</h2>
-  <div class="max-w-3xl mx-auto space-y-4">
-    <div>
-      <h3 class="text-xl font-semibold text-orange-400">
-        Ingeniería Informática
-      </h3>
-      <p>
-        Universidad Autónoma de Nariño — <span class="text-gray-400"
-          >2025 - Presente</span>
-      </p>
-    </div>
-  </div>
-</section>
-<!-- Habilidades -->
-<section class="bg-transparent text-white py-12 px-6">
-  <h2 class="text-3xl font-bold text-center mb-8">Habilidades</h2>
+  <h2 class="text-3xl font-bold text-center mb-8">Características Principales</h2>
   <ul
-    class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-300"
+    class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-center text-gray-300"
   >
-    <li class="bg-gray-800 p-4 rounded">HTML / CSS / Tailwind</li>
-    <li class="bg-gray-800 p-4 rounded">JavaScript</li>
-    <li class="bg-gray-800 p-4 rounded">React</li>
-    <li class="bg-gray-800 p-4 rounded">Bases de Datos (MySQL, PostgreSQL)</li>
-    <li class="bg-gray-800 p-4 rounded">Git y GitHub</li>
-    <li class="bg-gray-800 p-4 rounded">Python</li>
+    <li class="bg-gray-800 p-6 rounded-lg">
+      🎭 Sistema de sigilo avanzado con IA dinámica
+    </li>
+    <li class="bg-gray-800 p-6 rounded-lg">
+      ⚔️ Combate fluido y personalizable con habilidades especiales
+    </li>
+    <li class="bg-gray-800 p-6 rounded-lg">
+      🌆 Mundo abierto inspirado en la historia de California
+    </li>
+    <li class="bg-gray-800 p-6 rounded-lg">
+      🎶 Banda sonora épica orquestada
+    </li>
   </ul>
 </section>
-<!-- Proyectos -->
-<section class="bg-trasnparent text-white py-12 px-6">
-  <h2 class="text-3xl font-bold text-center mb-8">Proyectos Destacados</h2>
-  <div class="max-w-4xl mx-auto space-y-6">
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-      <h3 class="text-xl font-semibold text-orange-400">Hoja de vida</h3>
-      <p class="text-gray-300">Enterate de mi en GitHub</p>
-      <a href="#" class="text-orange-300 hover:underline mt-2 inline-block"
-        >Ver en GitHub</a
-      >
-    </div>
+
+<!-- Galería / Tráiler -->
+<section id="trailer" class="bg-transparent text-white py-12 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Tráiler Oficial</h2>
+  <p class="text-gray-300 mb-6">Sumérgete en la acción con el avance exclusivo.</p>
+  <div class="max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden shadow-lg">
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="Zorro Shadow Hunt Trailer"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
   </div>
 </section>
-<!-- Contacto -->
-<section class="bg-trasnparent text-white py-12 px-6 text-center">
-  <h2 class="text-3xl font-bold mb-4">Contacto</h2>
-  <p class="text-gray-300 mb-4">¡Escríbeme!</p>
+
+<!-- Descarga -->
+<section id="descargar" class="bg-transparent text-white py-12 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Descarga la Demo</h2>
+  <p class="text-gray-300 mb-6">
+    Disponible para Windows, macOS y Linux. ¡Ponte la máscara y comienza tu aventura!
+  </p>
   <a
-    href="mailto:jhondeivycriolloleyton@gmail.com"
+    href="#"
+    class="px-6 py-2 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600 transition"
+  >
+    Descargar Ahora
+  </a>
+</section>
+
+<!-- Contacto -->
+<section class="bg-transparent text-white py-12 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+  <p class="text-gray-300 mb-4">
+    ¿Tienes preguntas o sugerencias? ¡Queremos escucharte!
+  </p>
+  <a
+    href="mailto:contacto@zorrogame.com"
     class="px-6 py-2 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600 transition"
   >
     Enviar mensaje

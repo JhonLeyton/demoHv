@@ -1,48 +1,20 @@
----
-import ZorroSvg from "../icons/zorro.svg";
----
-
 <header
-    class="mx-auto w-full max-w-[2000px] px-6 py-6 bg-transparent text-white rounded-b-lg shadow-lg"
+    class="flex justify-between items-center px-8 py-6 bg-transparent relative z-10"
 >
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        {/* Logo y título */}
-        <div class="flex items-center gap-4">
-            <ZorroSvg class="w-14 h-14" />
-            <div>
-                <h1 class="font-extrabold text-3xl flex items-center gap-2">
-                    Bienvenido a <span class="text-astro-red">mi pagina</span>
-                    <span
-                        class="rounded-full bg-astro-red px-3 py-1 text-xl font-semibold shadow-lg"
-                    >
-                        2025
-                    </span>
-                </h1>
-                <p class="uppercase font-light text-gray-300 mt-1">
-                    Proyecto de <strong>@Jhonix</strong>
-                </p>
-            </div>
-        </div>
-        {/* Links de navegación */}
-        <nav class="flex gap-4 text-sm md:text-base">
-            <a
-                href="#"
-                class="hover:text-astro-red transition-colors duration-300 underline"
-            >
-                Inicio
-            </a>
-            <a
-                href="#"
-                class="hover:text-astro-red transition-colors duration-300 underline"
-            >
-                Proyectos
-            </a>
-            <a
-                href="#"
-                class="hover:text-astro-red transition-colors duration-300 underline"
-            >
-                Contacto
-            </a>
-        </nav>
+    <div class="flex items-center gap-3">
+        <img src="/logo.svg" alt="Neon Blade Logo" class="w-10 h-10" />
+        <h1 class="text-2xl font-bold text-cyan-400 tracking-wide">
+            NEON BLADE
+        </h1>
     </div>
+
+    <nav class="flex gap-6 text-sm font-semibold">
+        <a href="#gameplay" class="hover:text-pink-500 transition-colors"
+            >Gameplay</a
+        >
+        <a href="#team" class="hover:text-pink-500 transition-colors">Equipo</a>
+        <a href="#download" class="hover:text-pink-500 transition-colors"
+            >Descargar</a
+        >
+    </nav>
 </header>
