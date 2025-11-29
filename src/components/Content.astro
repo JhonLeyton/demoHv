@@ -1,0 +1,95 @@
+---
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import Story from "./Story.astro";
+import Gameplay from "./Gameplay.astro";
+import Team from "./Team.astro";
+import Footer from "./Footer.astro";
+
+// Tus capturas reales
+const screenshots = [
+  "/src/assets/Captura1.jpeg",
+  "/src/assets/Captura2.jpeg",
+  "/src/assets/Captura3.png"
+];
+---
+
+<Header />
+<Hero />
+
+<!-- Tráiler -->
+<section id="trailer" class="section max-w-4xl mx-auto text-center">
+  <h2 class="text-3xl font-bold neon-text mb-6">Tráiler oficial</h2>
+
+  <div class="max-w-3xl mx-auto neon-border rounded-lg overflow-hidden">
+    <div class="w-full" style="height: 550px;">
+      <iframe
+        src="https://www.youtube.com/embed/F0j7KF5k3lk"
+        class="w-full h-full"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <p class="mt-4 text-sm opacity-80">Próximamente disponible la demo jugable.</p>
+</section>
+
+<!-- Features -->
+<section id="features" class="section bg-black/60">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold neon-text text-center mb-10">Características principales</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="p-6 neon-border rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Mundo dinámico</h3>
+        <p class="opacity-80">Eventos cambiantes y misiones vivas.</p>
+      </article>
+
+      <article class="p-6 neon-border rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Progresión avanzada</h3>
+        <p class="opacity-80">Árbol de habilidades y mejoras de armas.</p>
+      </article>
+
+      <article class="p-6 neon-border rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Modo cooperativo</h3>
+        <p class="opacity-80">Misiones especiales con amigos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<Story />
+<Gameplay />
+<Team />
+
+<!-- Galería -->
+<section id="gallery" class="section">
+  <h2 class="text-3xl font-bold neon-text text-center mb-8">Galería</h2>
+
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-6">
+    {screenshots.map((src, i) => (
+      <figure class="rounded-lg overflow-hidden neon-border" key={i}>
+        <img 
+          src={src} 
+          alt={`Captura ${i + 1}`} 
+          class="gallery-img w-full h-48 object-cover" 
+        />
+      </figure>
+    ))}
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-black/40">
+  <div class="max-w-4xl mx-auto text-center p-8 neon-border rounded-lg">
+    <h3 class="text-2xl font-bold mb-4">Únete a la Resistencia</h3>
+    <p class="opacity-80 mb-6">Recibe noticias del desarrollo y betas exclusivas.</p>
+
+    <form class="max-w-xl mx-auto flex flex-col sm:flex-row gap-3">
+      <input type="email" placeholder="tu@correo.com" class="p-3 rounded bg-white/5" required />
+      <button type="submit" class="px-6 py-3 neon-border rounded">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<Footer />

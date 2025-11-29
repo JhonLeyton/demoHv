@@ -1,0 +1,139 @@
+{
+  "basics": {
+    "name": "Jhondeivy Criollo Leyton",
+    "label": "Estudiante de Ingeniería Informática",
+    "image": "https://avatars.githubusercontent.com/u/12345678?v=4",
+    "email": "jhondeivycriolloleyton@gmail.com",
+    "phone": "+57 3215801271",
+    "url": "https://jhondeivy.dev",
+    "summary": "Estudiante de Ingeniería Informática con interés en el desarrollo de software, bases de datos y robótica aplicada. Apasionado por aprender nuevas tecnologías, participar en proyectos innovadores y aplicar mis conocimientos en soluciones prácticas.",
+    "location": {
+      "address": "Miraflores",
+      "postalCode": "520001",
+      "city": "Pasto",
+      "countryCode": "CO",
+      "region": "Nariño"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jhondeivy",
+        "url": "https://linkedin.com/in/jhondeivy"
+      },
+      {
+        "network": "GitHub",
+        "username": "jhonleyton",
+        "url": "https://github.com/jhonleyton"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Mi Pagina web",
+      "position": "Estudiante Ingeniería",
+      "url": "https://JhonLeyton.com",
+      "startDate": "2025-09-13",
+      "endDate": null,
+      "summary": "Apoyo en la gestión tecnológica de la tienda especializada en equipos DJ profesionales.",
+      "highlights": [
+        "Asesoría en equipos tecnológicos",
+        "Gestión básica de página web y catálogos"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Nariño",
+      "url": "https://www.udenar.edu.co/",
+      "area": "Ingeniería de Software / Ingeniería Informática",
+      "studyType": "Pregrado",
+      "startDate": "2021-08-01",
+      "endDate": null,
+      "score": "En curso",
+      "courses": [
+        "Programación en Java y Python",
+        "Bases de Datos con MySQL",
+        "Simulación Digital",
+        "Robótica y Sistemas Embebidos"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "level": "Intermedio",
+      "keywords": ["POO", "Aplicaciones de escritorio", "MySQL"]
+    },
+    {
+      "name": "Python",
+      "level": "Intermedio",
+      "keywords": ["Análisis de datos", "Simulación", "Optimización"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermedio",
+      "keywords": ["Bases de Datos", "Consultas SQL", "Diseño de esquemas"]
+    },
+    {
+      "name": "HTML, CSS, JavaScript",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Proyectos académicos"]
+    },
+    {
+      "name": "Git & GitHub",
+      "level": "Avanzado",
+      "keywords": ["Control de versiones", "Colaboración en proyectos"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Robot Humanoide Asistente",
+      "isActive": true,
+      "description": "Proyecto universitario para el registro y análisis de la frecuencia cardíaca en atletas.",
+      "highlights": [
+        "Uso de sensores biomédicos",
+        "Procesamiento en tiempo real",
+        "Aplicación en deportistas de atletismo"
+      ],
+      "url": "https://github.com/jhonleyton/robot-humanoide"
+    },
+    {
+      "name": "Gestión de Taller de Motocicletas",
+      "isActive": true,
+      "description": "Sistema en Java y MySQL para la gestión de clientes, servicios y pagos de un taller mecánico.",
+      "highlights": [
+        "Módulo de facturación",
+        "Gestión de inventarios",
+        "Autenticación con usuarios"
+      ],
+      "url": "https://github.com/jhonleyton/taller-motos"
+    },
+    {
+      "name": "Simulación Digital",
+      "isActive": true,
+      "description": "Proyectos en Google Colab para simulaciones matemáticas y gráficas.",
+      "highlights": [
+        "Visualización de movimiento parabólico",
+        "Optimización con algoritmos",
+        "Gráficas interactivas"
+      ],
+      "url": "https://colab.research.google.com/"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio-Avanzado"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tecnología",
+      "keywords": ["Robótica", "Desarrollo Web", "Ciberseguridad", "IA"]
+    }
+  ]
+}

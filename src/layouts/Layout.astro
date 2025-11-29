@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import Smoke from "../components/Smoke.astro";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fuente futurista -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;600;800&display=swap" rel="stylesheet" />
+
+    <meta name="theme-color" content="#00eaff" />
+    <meta name="description" content="Neon Blade - Videojuego futurista con acción y estética neon." />
+  </head>
+
+  <body class="bg-black text-white relative overflow-hidden">
+    <Smoke />
+    <slot />
+  </body>
+</html>

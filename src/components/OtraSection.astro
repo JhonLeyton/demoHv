@@ -1,0 +1,29 @@
+---
+import { work } from "../cv.json";
+---
+
+<section class="mx-auto w-full max-w-[2000px] px-6 py-8 bg-transparent text-white rounded-t-lg shadow-lg">
+  <ul class="flex flex-col gap-6 list-none p-0 text-center">
+    {
+      work.map(({ name, startDate, endDate, position }, index) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
+
+        return (
+          <li ={index} class="bg-gray-700 rounded p-4">
+            <article>
+              <header class="mb-2">
+                <div>
+                  <h3 class="text-xl font-semibold">{name}</h3>
+                  <h4 class="text-md text-orange-400">{position}</h4>
+                </div>
+                <time ={startDate ?? ""} class="text-sm text-gray-400">{years}</time>
+              </header>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</section>
